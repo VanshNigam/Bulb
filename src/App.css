@@ -1,0 +1,93 @@
+/* General reset for the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  background-color: black;
+  color: aliceblue;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image container styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Common styling for the images */
+.image {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease; /* Add fade transition effect */
+}
+
+/* Button styling */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker shade of green */
+}
+
+.button:active {
+  background-color: #3e8e41; /* Even darker shade on click */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .image {
+    width: 80%;
+  }
+
+  .button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    width: 70%;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+button:hover {
+  background-color: #246127; /* Darker shade of green */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
